@@ -9,6 +9,7 @@
         <p>{{ text | toUppercase | lowercase}}</p>
         <hr>
         <br>
+        <button @click="fruits.push('berries')">New Fruits</button>
         <input type="text" v-model="filterText">
         <br>
         <br>

@@ -7,6 +7,12 @@ Vue.filter('capitalize', (value) => {
   return value.charAt(0).toUpperCase() + value.slice(1)
 })
 
+Vue.mixin({
+  created() {
+    console.log('A Global Mixin - Created Hook');
+  }
+})
+
 Vue.filter('lowercase', (value) => {
   value = value.toString()
   return value.toLowerCase()
